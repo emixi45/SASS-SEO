@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import '../base/mixins';
+
+.titulos-principales{
+    text-align: center;
+    @include titulos-principales (40px, 100px);
+    font-family: 'letraMenu';
+    @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+    text-align: center;
+    @include titulos-principales-m ( 40px,10px );
+    font-family: 'letraMenu';
+    }
+
+    
+}
+.textoindex{
+    text-align: center;
+    padding: 0 0 2rem 0 ;
+    font-family: 'lorem';
+}
+

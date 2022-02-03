@@ -1,0 +1,27 @@
+@import '../base/mixins';
+
+.contenedor-img{
+    @include d-center;
+    padding-top: 50px;
+    
+    .img{
+        width: 400px;
+        height: 300px;
+        @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .grid{
+        @include d-grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        padding-bottom: 20px;
+        @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+            @include d-grid-m;
+            padding-bottom: 50px;
+        }
+    }
+}
+

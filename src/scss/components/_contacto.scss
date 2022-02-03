@@ -1,0 +1,18 @@
+@import '../base/mixins';
+
+.formulario{
+    @include d-center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+            padding-bottom: 50px;
+        }
+    
+    .campos{
+        text-align: center;
+        padding-bottom: 10px ;
+        padding-top: 10px;
+    
+    }
+}
+

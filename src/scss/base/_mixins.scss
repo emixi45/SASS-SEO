@@ -1,0 +1,27 @@
+@mixin d-center {
+    display: flex;
+    justify-content: center; 
+}
+
+@mixin d-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@mixin d-grid-m {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+@mixin titulos-principales($size, $padding-top) {
+    font-size: $size;
+    padding-top: $padding-top;
+}
+    
+@mixin titulos-principales-m ($size-m,$padding-top-m) {
+    @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+    font-size: $size-m;
+    padding-top: $padding-top-m;
+    }
+}
+    

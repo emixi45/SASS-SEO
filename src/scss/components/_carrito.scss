@@ -1,0 +1,6 @@
+@import '../base/extend';
+.iconomedio{
+    text-align: center;
+    padding-bottom: 10px;
+    @extend %iconomedio;
+}

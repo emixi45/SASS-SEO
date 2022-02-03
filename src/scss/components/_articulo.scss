@@ -1,0 +1,36 @@
+@import '../base/extend';
+.articulo-m{
+    @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+        padding-bottom: 40px;
+    }
+    .productoimg{
+        @include d-center;
+        
+    }
+    .img-producto{
+        max-height: 400px;
+        @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+                max-height: 200px;
+        }
+            
+    }
+    .botones{
+        padding: 10px 10px 10px 10px;
+        @include d-center;
+        margin-left: 10px;
+        @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+        padding: 10px 10px 10px 10px;
+        border-radius: 10%;
+    }
+        
+
+    }
+    .formulario{
+        padding-top: 10px;
+        margin-right: 10px;
+        @include d-center;
+        padding-bottom: 50px;
+    }
+
+}
+
